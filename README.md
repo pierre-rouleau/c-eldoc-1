@@ -3,7 +3,7 @@ c-eldoc.el
 
 Display description of the function under the cursor.
 
-![screenshot of c-eldoc](http://github.com/mooz/c-eldoc/raw/master/images/screenshot.png "Display prototypes for the function under the cursor")
+![screenshot of c-eldoc](https://raw.githubusercontent.com/mooz/c-eldoc/master/images/screenshot.png "Display prototypes for the function under the cursor")
 
 Original version: [http://www.emacswiki.org/emacs/c-eldoc.el](http://www.emacswiki.org/emacs/c-eldoc.el)
 
@@ -43,11 +43,11 @@ The following settings this update command to the `Ctrl-c + d` key.
 
     (defun c-eldoc-define-keybindings (map)
       (define-key map (kbd "C-c d") 'c-eldoc-force-cache-update))
-    
+
     (add-hook 'c-mode-hook
               (lambda ()
                 (c-eldoc-define-keybindings c-mode-map)))
-    
+
     (add-hook 'c++-mode-hook
               (lambda ()
                 (c-eldoc-define-keybindings c++-mode-map)))
